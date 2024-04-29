@@ -2,13 +2,13 @@
   
         <main class="bg-white z-0  h-[80vh] md:h-screen w-screen overflow-hidden relative">
       <div
-        class="layer overflow-hidden rounded-b-[50%] pattern-bg  absolute z-10 w-[200%] -right-1/2 h-[70%]  opacity-10  top-0">
-  
+        class="layer overflow-hidden rounded-b-[50%] pattern-bg  absolute -z-10 w-[200%] -right-1/2 h-[70%]   top-0">
+  <div class=" bg-b-light h-full w-full opacity-85 "></div>
       </div>
       <BookNavBar />
-      <div class="w-[200%] h-[60%] absolute   bg-b-light rounded-b-[50%] px-10  -left-1/2">
+      <div class="w-[200%] h-[60%] relative bg-opacity-0   bg-b-light rounded-b-[50%] px-10  -left-1/2">
   
-        <div class="mt-28 md:mt-24 text-center z-50  relative w-full  flex flex-col ">
+        <div class="pt-28  text-center z-50   w-full  flex flex-col ">
           <h3 class="text-sm font-semibold text-b-primary mb-5">Your fevorite book selection</h3>
           <h1 class=" text-2xl md:text-5xl  tracking-tight   font-bold text-b-secondary relative  w-fit self-center"><img
               class="h-8 w-8 md:w-10 md:h-10 absolute  -top-4 -left-4 p-1 rounded-full bg-pink-200"
@@ -24,7 +24,7 @@
       </div>
     </main>
     
-    <section class="-mt-24  relative z-1000">
+    <section class="-mt-28  relative z-1000">
       <div class="flex justify-between w-[90%] mx-auto  items-baseline">
         <h1 class="text-b-secondary  text-md font-semibold md:text-3xl">All our books</h1>
         <div>
@@ -167,6 +167,7 @@
           </div>
    </section>
     <BookFooter/>
+   
 </template>
 
 <script>
@@ -177,11 +178,12 @@ import ButtonPrimary from '../components/ButtonPrimary.vue'
 import ButtonLayout from '../components/ButtonLayout.vue'
 import BookCardRecent from '../components/BookCardRecent.vue'
 import BookFooter from '../components/BookFooter.vue'
+import SlidingCatgory from '../components/SlidingCatgory.vue'
 //import axios from 'axios'
     export default {
         name: 'BookLandingView',
         components: {
-            BookNavBar, HeroSearch, BookCard, ButtonPrimary, ButtonLayout, BookCardRecent, BookFooter
+            BookNavBar, HeroSearch, BookCard, ButtonPrimary, ButtonLayout, BookCardRecent, BookFooter, SlidingCatgory
         },
         computed: {
             computedBooks(){
