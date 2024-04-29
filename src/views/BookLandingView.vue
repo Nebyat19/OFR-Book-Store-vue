@@ -166,6 +166,7 @@
 </div>
           </div>
    </section>
+    <BookFooter/>
 </template>
 
 <script>
@@ -175,11 +176,12 @@ import BookCard from '../components/BookCard.vue'
 import ButtonPrimary from '../components/ButtonPrimary.vue'
 import ButtonLayout from '../components/ButtonLayout.vue'
 import BookCardRecent from '../components/BookCardRecent.vue'
+import BookFooter from '../components/BookFooter.vue'
 //import axios from 'axios'
     export default {
         name: 'BookLandingView',
         components: {
-            BookNavBar, HeroSearch, BookCard, ButtonPrimary, ButtonLayout, BookCardRecent
+            BookNavBar, HeroSearch, BookCard, ButtonPrimary, ButtonLayout, BookCardRecent, BookFooter
         },
         computed: {
             computedBooks(){
