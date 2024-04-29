@@ -55,8 +55,8 @@
   
     </section>   
 
-    <section class="h-[100vh] py-10 md:py-24  bg-b-light mt-10 ">
-      <div class="w-[80%] mx-auto  flex-col md:flex-row flex gap-10   md:gap-20 md:justify-between h-full">
+    <section class="h-[100vh] flex flex-col justify-center  md:py-24  bg-b-light mt-10 ">
+      <div class="w-[80%] mx-auto  flex-col md:flex-row flex gap-10   md:gap-20 md:justify-between h-fit md:h-full">
         <div class="w-full h-60 md:w-2/5 p-4 md:h-full shadow-xl rounded-lg border-2 border-gray-500  ">
             <img class="w-full shadow-lg rounded-lg h-full object-left-top object-cover inset-5" :src="sampleBook.imageUrl" dsrc="../img/book.jpg" alt="book icon">
         </div>
@@ -76,21 +76,96 @@
     </div>
     </section>
 
-    <section class="h-[100vh] py-10  w-[90%] m-auto bg-gray-50 ">
-        <div class="">
+    <section class="min-h-[100vh] py-10  w-[90%] m-auto bg-gray-50 overflow-hidden">
+       
             <h1 class="text-3xl text-b-secondary">Recently Viewed Books</h1>
-            <div class="flex flex-wrap mt-16 gap-10   mb-20 justify-between">
+            <div class="flex flex-wrap mt-16 gap-10    justify-between">
             <BookCardRecent
             v-for="book in computedBooks" :book="book" :key="book.id" 
             />
-            <div class="w-full mt-5 flex justify-center">
+            <div class="w-full mt-5  flex justify-center">
                 <ButtonPrimary :name="'View All'"/>
             </div>
             </div>
-            </div>
+            
         </section>
       
-   
+        <section class="min-h-[100vh]  w-full bg-b-light">
+          <div class="py-20  w-[90%] m-auto bg-b-light mt-20">
+          <h3 class="text-xs md:text-sm font-semibold text-b-primary">Exhibitions Shop Conferences</h3>
+           <h1  class="md:text-2xl  text-b-secondary md:mt-3">News about the Ofr. bookshop</h1>
+<div class="flex mt-5 gap-10 md:flex-row flex-col">
+  <div class="  flex flex-col gap-10">
+  <div class="w-full   left border-2 border-gray-500 rounded-lg">
+<div class="w-full h-full flex flex-col p-5">
+  <div class="pb-[65%] border-2 border-gray-500 overflow-hidden rounded-lg relative">
+    <img class="w-full h-full absolute inset-0 object-cover" src="https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg" alt="">
+  </div>
+ 
+<h1 class="mt-5 text-md mb-5 md:text-lgtext-opacity-90 text-b-secondary">Reading practise</h1>
+<p class="mt-3 text-sm mb-5 text-b-secondary text-opacity-80">to Kill a Mockingbird is a novel by Harper Lee published in 1960. It was immediately successful, winning the Pulitzer Prize, and has become a classic of modern American literature. The plot and characters are loosely based on Lee's observations of her family, her neighbors and an event that occurred near her hometown of Monroeville, Alabama, in 1936, when she was ten.</p>
+<div class="flex justify-self-start w-fit"><ButtonPrimary  :name="'Read More'"/></div>
+
+</div>
+
+
+</div>
+
+  <div class="w-full  line-clamp-9 md:line-clamp-10   flex justify-between gap-5  p-5 border-2 border-gray-500 rounded-lg">
+
+ <img class="object-cover rounded-lg border border-gray-500 w-1/2 h-auto" src="https://covers.openlibrary.org/b/isbn/9780439554930-L.jpg" alt="">
+  
+ <div class="py-1 md:py-8   h-full px-1 md:px-5 w-1/2 ">
+  <h1 class=" text-md mb-5 md:text-lg text-opacity-90 text-b-secondary">Reading practise</h1>
+<div class="flex h-full  flex-col justify-around">
+  <p class=" line-clamp-9 text-xs  text-b-secondary text-opacity-80">Harry Potter and the Philosopher's Stone is the first novel in the Harry Potter series written by J.K. Rowling. It follows Harry Potter, a young wizard who discovers his magical heritage and attends Hogwarts School of Witchcraft and Wizardry. </p>
+<div class="flex mb-3 justify-self-start w-fit"><ButtonPrimary  :name="'Read More'"/></div>
+</div>
+
+ </div>
+
+
+
+
+</div>
+</div>
+<div class="flex flex-col gap-10">
+  <div class="w-full  line-clamp-9 md:line-clamp-10   flex justify-between gap-5  p-5 border-2 border-gray-500 rounded-lg">
+
+<img class="object-cover rounded-lg border border-gray-500 w-1/2 h-auto" src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg" alt="">
+ 
+<div class="py-1 md:py-8   h-full px-1 md:px-5 w-1/2 ">
+ <h1 class=" text-md mb-5 md:text-lg text-opacity-90 text-b-secondary">Reading practise</h1>
+<div class="flex  h-full flex-col justify-around">
+ <p class="  line-clamp-7 text-xs  text-b-secondary text-opacity-80">Pride and Prejudice is a romantic novel by Jane Austen, first published in 1813. It follows the emotional development of the protagonist, Elizabeth Bennet, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential. </p>
+<div class="flex mb-3 justify-self-start w-fit"><ButtonPrimary  :name="'Read More'"/></div>
+</div>
+
+</div>
+
+
+
+
+</div>
+<div class="w-full   left border-2 border-gray-500 rounded-lg">
+<div class="w-full h-full flex flex-col p-5">
+  <div class="pb-[65%] border-2 border-gray-500 overflow-hidden rounded-lg relative">
+    <img class="w-full h-full absolute inset-0 object-cover" src="https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg" alt="">
+  </div>
+ 
+<h1 class="mt-5 text-md mb-5 md:text-lg text-opacity-90 text-b-secondary">Reading practise</h1>
+<p class="mt-3 text-sm mb-5 text-b-secondary text-opacity-80">L1984 is a dystopian novel by George Orwell published in 1949. It depicts a totalitarian regime, led by the Party and its leader Big Brother, who monitor and control every aspect of society.</p>
+<div class="flex justify-self-start w-fit"><ButtonPrimary  :name="'Read More'"/></div>
+
+</div>
+
+
+</div>
+</div>
+
+</div>
+          </div>
+   </section>
 </template>
 
 <script>
