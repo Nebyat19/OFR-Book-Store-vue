@@ -21,7 +21,7 @@
 </div>
 <div class="mt-5 flex flex-col items-center"> 
     <hr  class=" w-60   h-[0.2px] bg-b-secondary ">
-    <span class="pt-2    font-sans font-bold text-b-secondary">Made with <span class="font-bold">❤️</span> by Hetu</span> </div>
+    <span class="pt-2    font-sans font-bold text-b-secondary">Made with <span class="font-bold">❤️</span> <a href="https://github.com/Nebyat19/">by Hetu</a></span> </div>
 
 </footer>
 
