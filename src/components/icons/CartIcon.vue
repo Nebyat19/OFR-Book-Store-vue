@@ -15,5 +15,6 @@
 export default {
   name: 'CartIcon',
   props: ['Class', 'key']
+  
 }
 </script>

@@ -75,7 +75,21 @@
         </div>
     </div>
     </section>
-        <h1>Book Landing Page</h1>
+
+    <section class="h-[100vh] py-10  w-[90%] m-auto bg-gray-50 ">
+        <div class="">
+            <h1 class="text-3xl text-b-secondary">Recently Viewed Books</h1>
+            <div class="flex flex-wrap mt-16 gap-10   mb-20 justify-between">
+            <BookCardRecent
+            v-for="book in computedBooks" :book="book" :key="book.id" 
+            />
+            <div class="w-full mt-5 flex justify-center">
+                <ButtonPrimary :name="'View All'"/>
+            </div>
+            </div>
+            </div>
+        </section>
+      
    
 </template>
 
@@ -85,11 +99,17 @@ import HeroSearch from '../components/HeroSearch.vue'
 import BookCard from '../components/BookCard.vue'
 import ButtonPrimary from '../components/ButtonPrimary.vue'
 import ButtonLayout from '../components/ButtonLayout.vue'
+import BookCardRecent from '../components/BookCardRecent.vue'
 //import axios from 'axios'
     export default {
         name: 'BookLandingView',
         components: {
-            BookNavBar, HeroSearch, BookCard, ButtonPrimary, ButtonLayout
+            BookNavBar, HeroSearch, BookCard, ButtonPrimary, ButtonLayout, BookCardRecent
+        },
+        computed: {
+            computedBooks(){
+                return this.books.slice(4,8)
+            }
         },
         methods: {
    bookUrl() {
@@ -119,6 +139,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0061120081-L.jpg",
     alt: "To Kill a Mockingbird Book Cover",
     price: "$10.99",
+    viewCount: 100,
     isNew: false
   },
   {
@@ -131,6 +152,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0451524934-L.jpg",
     alt: "1984 Book Cover",
     price: "$8.99",
+    viewCount: 1560,
     isNew: true
   },
   {
@@ -143,6 +165,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0743273567-L.jpg",
     alt: "The Great Gatsby Book Cover",
     price: "$12.50",
+    viewCount: 20084,
     isNew: false
   },
   {
@@ -155,6 +178,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0141439513-L.jpg",
     alt: "Pride and Prejudice Book Cover",
     price: "$9.99",
+    viewCount: 7700,
     isNew: true
   },
   {
@@ -167,6 +191,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0316769487-L.jpg",
     alt: "The Catcher in the Rye Book Cover",
     price: "$11.25",
+    viewCount: 1000,
     isNew: false
   },
   {
@@ -179,6 +204,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0345339681-L.jpg",
     alt: "The Hobbit Book Cover",
     price: "$14.99",
+    viewCount: 500,
     isNew: true
   },
   {
@@ -191,6 +217,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0439554934-L.jpg",
     alt: "Harry Potter and the Philosopher's Stone Book Cover",
     price: "$15.99",
+    viewCount: 10080,
     isNew: false
   },
   {
@@ -203,6 +230,7 @@ books: [
     imageUrl: "https://covers.openlibrary.org/b/isbn/0618640150-L.jpg",
     alt: "The Lord of the Rings Book Cover",
     price: "$19.99",
+    viewCount: 20040,
     isNew: false
   }
 ]
