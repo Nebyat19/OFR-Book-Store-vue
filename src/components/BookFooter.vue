@@ -1,7 +1,7 @@
 <template>
 <footer class="bg-gray-50 w-screen ">
-<div class="px-32 mt-10 flex justify-between items-center ">
-    <div class=" flex flex-col gap-10 justify-between py-5">
+<div class="px-5 md:px-32 mt-10 flex w-full flex-col md:flex-row justify-between items-center ">
+    <div class=" flex flex-col gap-5 md:gap-10 justify-between py-5">
 <h1 class="uppercase text-lg font-bold text-b-secondary">get our New latter</h1>
 
 <div class="flex border rounded-md border-opacity-50  border-bk-secondary p-1">
@@ -10,8 +10,8 @@
 </div>
 </div>
 
-<ul class="grid grid-cols-3 gap-x-28 gap-y-10 text-xs text-opacity-70 text-b-secondary grid-rows-2">
-   <li><a href="">about us</a></li>
+<ul class="grid grid-cols-3 text-center align-middle items-center w-full  gap-y-5 md:gap-x-28 md:gap-y-10 text-xs text-opacity-70 text-b-secondary grid-rows-2">
+   <li class=""><a href="">about us</a></li>
    <li><a href="">books</a></li>
    <li><a href="">contact us</a></li>
    <li><a href="">store</a></li>
