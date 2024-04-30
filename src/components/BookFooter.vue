@@ -1,6 +1,6 @@
 <template>
 <footer class="bg-gray-50 w-screen ">
-<div class="px-5 md:px-32 mt-10 flex w-full flex-col md:flex-row justify-between items-center ">
+<div class="px-5 md:px-32 mt-10 flex  w-full flex-col md:flex-row justify-between items-center ">
     <div class=" flex flex-col gap-5 md:gap-10 justify-between py-5">
 <h1 class="uppercase text-lg font-bold text-b-secondary">get our New latter</h1>
 
@@ -10,7 +10,7 @@
 </div>
 </div>
 
-<ul class="grid grid-cols-3 text-center align-middle items-center w-full  gap-y-5 md:gap-x-28 md:gap-y-10 text-xs text-opacity-70 text-b-secondary grid-rows-2">
+<ul class="grid grid-cols-3 text-center align-middle items-center gap-x-28  gap-y-5  md:gap-y-10 text-xs text-opacity-70 text-b-secondary grid-rows-2">
    <li class=""><a href="">about us</a></li>
    <li><a href="">books</a></li>
    <li><a href="">contact us</a></li>
@@ -19,9 +19,9 @@
    <li><a href="">pages</a></li>
 </ul>
 </div>
-<div class="mt-5 flex flex-col items-center"> 
-    <hr  class=" w-60   h-[0.2px] bg-b-secondary ">
-    <span class="pt-2    font-sans font-bold text-b-secondary">Made with <span class="font-bold">❤️</span> <a href="https://github.com/Nebyat19/">by Hetu</a></span> </div>
+<div class="mt-5 flex bg-b-secondary  flex-col items-center"> 
+    <hr  class=" w-60  mt-3  h-[0.2px] bg-gray-500 ">
+    <span class="   font-sans font-bold text-white">Made with <span class="font-bold">❤️</span> <a href="https://github.com/Nebyat19/">by Hetu</a></span> </div>
 
 </footer>
 

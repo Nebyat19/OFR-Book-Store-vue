@@ -1,13 +1,14 @@
 <template>
 
-<div :id="book.id" class="book-card w-full lg:w-1/3 xl:w-1/5 px-5 md:px-0">
+<div :id="book.id+1" class="book-card w-full lg:w-1/3 xl:w-1/5 px-5 md:px-0 transition-all duration-1000 ease-out">
             <div class="book-card-img pb-[130%] relative w-full  shadow-lg overflow-hidden " >
                 <img class="absolute h-full w-full inset-0 " :src="book.imageUrl" fsrc="../img/book.jpg" :alt="book.alt">
-            </div>
+                <div class=" hover:opacity-50 opacity-0   absolute w-full h-full top-0  bg-b-secondary"></div>
+              </div>
   
-            <div class="px-3 -mt-10 relative z-1000 ">
-              <div class="book-card-info rounded-lg  bg-white shadow-lg  px-5 pt-5">
-              <div class="flex justify-start items-baseline">
+            <div class="px-3 -mt-10 relative z-1000   ">
+              <div class="book-card-info rounded-lg  bg-white shadow-lg border hover:border-bk-secondary px-5 pt-5">
+              <div class="flex   justify-start items-baseline">
                 <span 
                 :class="book.isNew ? 'bg-green-400' : 'bg-red-400'"
                 class="text-xs mb-2 py-1 rounded-full text-center items-center  px-2  text-b-light">

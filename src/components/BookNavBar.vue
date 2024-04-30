@@ -34,12 +34,12 @@ import CartIcon from './icons/CartIcon.vue';
     export default {
       data(){
         return{
-          navShow:false
+          navShow:true
         }
       },
       methods:{
         toggleNabBar(){
-          console.log('clicked')
+         
           this.navShow = !this.navShow
         },
       

@@ -1,6 +1,6 @@
 <template>
 
-<div :id="book.id" class="book-card border w-full lg:w-1/3 xl:w-1/5 px-5 md:px-0">
+<div :id="book.id" class="book-card  w-full lg:w-1/3 xl:w-1/5 px-5 md:px-0">
             <div class="book-card-img pb-[110%] rounded-lg shadow-lg relative w-full  overflow-hidden " >
                 <img class="absolute h-full w-full inset-0 " :src="book.imageUrl" fsrc="../img/book.jpg" :alt="book.alt">
             </div>
