@@ -1,5 +1,5 @@
 <template>
-   <header class="w-screen  bg-opacity-50  pt-7  overflow-hidden">
+   <header :class="Class" class="w-screen  bg-opacity-50   pt-7  overflow-hidden">
   
         <nav class="  flex items-center w-[90%] mx-auto  justify-between">
           <div>
@@ -7,12 +7,12 @@
           </div>
           <ul v-if="navShow"
             class="w-[90%] z-50 h-fit  absolute md:bg-transparent md:p-0 bg-b-secondary rounded-lg p-3 font-bold -m-2 md:m-0 md:w-fit top-20  md:static flex flex-col gap-3 mb-4 md:flex-row md:ml-60 lg:ml-80  lg:gap-10 justify-between capitalize text-sm text-b-secondary">
-            <li class=" hover:text-b-primary  bg-gray-50 rounded-lg px-2 py-1 w-full md:px-0 md:bg-b-light md:w-fit"><a
+            <li class=" md:bg-transparent hover:text-b-primary  bg-gray-50 rounded-lg px-2 py-1 w-full md:px-0 md:bg-b-light md:w-fit"><a
                 href="">books</a> </li>
   
-            <li class="hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit"><a
+            <li class="md:bg-transparent hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit"><a
                 href="">store</a> </li>
-            <li class="hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit"><a
+            <li class="md:bg-transparent hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit"><a
                 href="">About us</a> </li>
           </ul>
         
@@ -32,6 +32,9 @@
 import IconMenuBar from './icons/IconMenuBar.vue'
 import CartIcon from './icons/CartIcon.vue';  
     export default {
+      props:['Class']
+        
+  ,
       data(){
         return{
           navShow:true
