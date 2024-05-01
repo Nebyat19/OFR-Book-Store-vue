@@ -1,10 +1,13 @@
-import AboutUsView from '@/views/AboutUsView.vue'
-import BookLandingView from '@/views/BookLandingView.vue'
-import BooksStoreView from '@/views/BooksStoreView.vue'
-import BooksView from '@/views/BooksView.vue'
+
 import {createRouter, createWebHistory} from 'vue-router'
 
-const route=[
+
+const AboutUsView =()=> import('@/views/AboutUsView.vue')
+const BookLandingView = ()=> import('@/views/BookLandingView.vue')
+const BooksStoreView =()=> import('@/views/BooksStoreView.vue')
+const BooksView =()=> import('@/views/BooksView.vue')
+
+const routes=[
     {
         path:'/',
         name:'Home',
@@ -28,9 +31,9 @@ const route=[
     
 ]
 
-const routes =createRouter({
+const router =createRouter({
     history:createWebHistory(),
-    routes:route
+    routes
 })
 
-export default routes
+export default router

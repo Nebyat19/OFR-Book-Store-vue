@@ -7,17 +7,17 @@
           </div>
           <ul v-if="navShow"
             class="w-[90%] z-50 h-fit  absolute md:bg-transparent md:p-0 bg-b-secondary rounded-lg p-3 font-bold -m-2 md:m-0 md:w-fit top-20  md:static flex flex-col gap-3 mb-4 md:flex-row md:ml-60 lg:ml-80  lg:gap-10 justify-between capitalize text-sm text-b-secondary">
-            <li :class="{ active: active === 'home' }" class="  md:bg-transparent hover:text-b-primary  bg-gray-50 rounded-lg px-2 py-1 w-full md:px-0 md:bg-b-light md:w-fit">
+            <li class="  md:bg-transparent hover:text-b-primary  bg-gray-50 rounded-lg px-2 py-1 w-full md:px-0 md:bg-b-light md:w-fit">
               <RouterLink
                 to="/">home</RouterLink> </li>
-            <li :class="{ active: active === 'books' }" class=" md:bg-transparent hover:text-b-primary  bg-gray-50 rounded-lg px-2 py-1 w-full md:px-0 md:bg-b-light md:w-fit">
+            <li  class=" md:bg-transparent hover:text-b-primary  bg-gray-50 rounded-lg px-2 py-1 w-full md:px-0 md:bg-b-light md:w-fit">
               <RouterLink
                 to="/books">books</RouterLink> </li>
   
-            <li  :class="{ active: active === 'store' }" class="md:bg-transparent hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit">
+            <li   class="md:bg-transparent hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit">
               <RouterLink
                 to="/store">store</RouterLink> </li>
-            <li :class="{ active: active === 'about' }"  class="md:bg-transparent hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit">
+            <li  class="md:bg-transparent hover:text-b-primary bg-gray-50  rounded-lg px-2 py-1 w-full md:bg-b-light md:w-fit">
               <RouterLink
                 to="/about">About us</RouterLink> </li>
                 

@@ -36,6 +36,6 @@
 }
 }
 
-.active{
+.router-link-active, .router-link-exact-active{
   @apply text-b-primary
 }
