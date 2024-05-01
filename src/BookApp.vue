@@ -1,18 +1,19 @@
 <template>
- 
-        <BookLandingView />
-   
-  
+<BookNavBar/>
+    <RouterView/>
 </template>
-
-<script>
-import BookLandingView from './views/BookLandingView.vue'
-
-    export default {
-        name: 'BookApp',
-        components: {
-            BookLandingView
+    
+    <script>
+  
+   
+   import BookNavBar from './components/BookNavBar.vue';
+   import { RouterView } from 'vue-router';
+    
+        export default {
+            name: 'BookApp',
+            components: {
+                RouterView, BookNavBar
+            }
         }
-    }
-</script>
+    </script>
 

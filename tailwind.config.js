@@ -30,7 +30,8 @@ export default {
         'primary': '#10B981', //green-600 from tailwindcss palette = #10B981
         'light': '#dfdbde',
         'darker': '#46261a',
-        'secondary': '#fbbb40'
+        'secondary': '#fbbb40',
+        'brand':`rgb(var(--color-brand)/<alpha-value>)`,
 
       }
 
