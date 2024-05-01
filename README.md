@@ -1,35 +1,21 @@
-# vue-vite
+# Ofr. Bookstore 📚
 
-This template should help get you started developing with Vue 3 in Vite.
+- This project was created for learning purposes, utilizing Vue.js and Tailwind CSS. The UI design was inspired by Dribbble.
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Technologies Used
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- **Vue with Vite:** Simplify development with Vue's reactivity and Vite's lightning-fast hot module replacement.
+- **Tailwind CSS and PostCSS:** Rapidly build sleek and responsive user interfaces with Tailwind's utility-first approach.
+- **Recommended IDE Setup:** [VSCode](https://code.visualstudio.com/) with [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) extension (disable Vetur).
 
 ## Project Setup
 
-```sh
-npm install
-```
+1. Install dependencies: `npm install`
+2. Run for Development: `npm run dev`
+3. Build for Production: `npm run build`
+4. Lint with ESLint: `npm run lint`
 
-### Compile and Hot-Reload for Development
+## License
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+This project is licensed under the [MIT License](LICENSE).
