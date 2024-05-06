@@ -3,7 +3,7 @@
 This project was created for learning purposes, utilizing Vue.js and Tailwind CSS. The UI design was inspired by Dribbble.
 
 ## Project Overview
-![Screenshot](src/img/Screenshot from 2024-05-06 17-48-12.png)
+![Screenshot](src/img/Screenshot.png)
 ## Technologies Used
 
 - **Vue with Vite:** Learning Vue's reactivity and Vite's fast development workflow.
